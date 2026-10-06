@@ -1,0 +1,9 @@
+# robots.txt for smalltoolworks.com
+# All content is public — no areas are behind login.
+
+User-agent: *
+Allow: /
+
+# No crawl-delay needed; the site is static and small.
+
+Sitemap: https://smalltoolworks.com/sitemap.xml
