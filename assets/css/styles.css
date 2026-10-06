@@ -1468,3 +1468,406 @@ img.app-icon { object-fit: cover; padding: 0; flex-shrink: 0; border-radius: 14p
 @media (max-width: 480px) { .language-links { justify-content: flex-start; } }
 html[lang="ja"] h1, html[lang^="zh"] h1 { line-height: 1.3; }
 .card-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+
+/* ==========================================================================
+   V2 — Visual upgrade
+   Layout rhythm, dark anchor sections, real app-icon presentation.
+   Everything above this line is v1; overrides happen here.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Type scale — bigger, tighter, more confident
+   -------------------------------------------------------------------------- */
+.hero__title {
+  font-size: clamp(2.4rem, 1.4rem + 4.2vw, 4.25rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  max-width: 18ch;
+}
+
+.hero--center .hero__title {
+  max-width: 22ch;
+}
+
+.section__head h2,
+.cta-panel h2 {
+  font-size: clamp(1.6rem, 1.2rem + 1.8vw, 2.4rem);
+  font-weight: 680;
+  letter-spacing: -0.026em;
+}
+
+/* Eyebrow with an accent tick — small, but deliberate */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 18px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--accent);
+}
+
+/* --------------------------------------------------------------------------
+   Hero — tighter vertical rhythm, icon strip as visual anchor
+   -------------------------------------------------------------------------- */
+.hero {
+  padding: clamp(64px, 8vw, 120px) 0 clamp(44px, 5vw, 64px);
+}
+
+.hero__actions {
+  margin-top: 36px;
+}
+
+/* Real app icons, generously sized, linking to each product */
+.icon-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  margin-top: clamp(40px, 5vw, 56px);
+}
+
+.icon-strip a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(20, 20, 22, 0.10), 0 4px 12px rgba(20, 20, 22, 0.08);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.icon-strip a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.icon-strip a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 2px 4px rgba(20, 20, 22, 0.10), 0 12px 24px rgba(20, 20, 22, 0.14);
+}
+
+.icon-strip a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* --------------------------------------------------------------------------
+   Language bar — an actual component, not a stray line of text
+   -------------------------------------------------------------------------- */
+.language-bar {
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.language-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 0;
+}
+
+.language-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--ink-muted);
+  transition: background 0.14s ease, color 0.14s ease;
+}
+
+.language-links a:hover {
+  background: var(--bg-sunken);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.language-links a[aria-current="true"] {
+  background: var(--ink);
+  color: #fff;
+}
+
+/* --------------------------------------------------------------------------
+   App showcase — wide horizontal cards, icons at real size
+   -------------------------------------------------------------------------- */
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr));
+  gap: 20px;
+}
+
+.app-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xs);
+  transition: border-color 0.16s ease, box-shadow 0.16s ease, transform 0.16s ease;
+}
+
+.app-card:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.app-card__icon {
+  width: 76px;
+  height: 76px;
+  border-radius: 17px;
+  flex: none;
+  object-fit: cover;
+  box-shadow: 0 1px 2px rgba(20, 20, 22, 0.08), 0 6px 16px rgba(20, 20, 22, 0.10);
+}
+
+.app-card__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.app-card__title {
+  margin: 2px 0 6px;
+  font-size: 1.1875rem;
+  letter-spacing: -0.018em;
+}
+
+.app-card__desc {
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--ink-secondary);
+}
+
+.app-card__link {
+  margin-top: 12px;
+  display: inline-flex;
+}
+
+/* Category tag above the title — quiet, all-caps */
+.app-card__cat {
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+/* --------------------------------------------------------------------------
+   Dark anchor section — one block of near-black gives the page rhythm
+   -------------------------------------------------------------------------- */
+.section--dark {
+  background: #141416;
+  border-top: 1px solid #141416;
+  border-bottom: 1px solid #141416;
+  color: #d6d6db;
+}
+
+.section--dark .section__head h2 {
+  color: #ffffff;
+}
+
+.section--dark .section__head .lede,
+.section--dark .card__body {
+  color: #a5a5ad;
+}
+
+.section--dark .eyebrow {
+  color: #8f8f98;
+}
+
+.section--dark .eyebrow::before {
+  background: #4d8df0;
+}
+
+.section--dark .card {
+  background: #1d1d22;
+  border-color: #2b2b32;
+  box-shadow: none;
+}
+
+.section--dark .card:hover {
+  border-color: #3a3a44;
+}
+
+.section--dark .card__title {
+  color: #f2f2f4;
+}
+
+.section--dark .card--flat:hover {
+  box-shadow: none;
+  transform: none;
+}
+
+/* --------------------------------------------------------------------------
+   CTA panel — a dark slab to close the page
+   -------------------------------------------------------------------------- */
+.cta-panel {
+  padding: clamp(44px, 6vw, 72px) clamp(28px, 5vw, 72px);
+  background: #141416;
+  border-radius: 22px;
+  text-align: center;
+  color: #d6d6db;
+}
+
+.cta-panel h2 {
+  color: #ffffff;
+}
+
+.cta-panel .lede {
+  color: #a5a5ad;
+  max-width: 52ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-panel .btn--primary {
+  background: #ffffff;
+  color: #141416;
+}
+
+.cta-panel .btn--primary:hover {
+  background: #e8e8ec;
+  color: #141416;
+}
+
+.cta-panel .btn--secondary {
+  background: transparent;
+  border-color: #3a3a44;
+  color: #f2f2f4;
+  box-shadow: none;
+}
+
+.cta-panel .btn--secondary:hover {
+  background: #232329;
+  border-color: #4a4a55;
+  color: #ffffff;
+}
+
+/* --------------------------------------------------------------------------
+   Footer — a step darker so the page ends with weight
+   -------------------------------------------------------------------------- */
+.footer {
+  background: #f2f2f4;
+}
+
+/* --------------------------------------------------------------------------
+   Small screens
+   -------------------------------------------------------------------------- */
+@media (max-width: 620px) {
+  .language-links {
+    justify-content: center;
+  }
+
+  .app-card {
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+  }
+
+  .app-card__icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+  }
+
+  .icon-strip {
+    gap: 14px;
+  }
+
+  .icon-strip a {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .icon-strip a:hover,
+  .app-card:hover {
+    transform: none;
+  }
+}
+
+/* Whole-card click target (stretched link). Real links inside stay clickable. */
+.app-card {
+  position: relative;
+}
+
+.app-card__overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.app-card__overlay:hover {
+  text-decoration: none;
+}
+
+.app-card:hover .link-arrow {
+  color: var(--accent-hover);
+}
+
+.app-card:hover .link-arrow::after {
+  transform: translateX(3px);
+}
+
+/* Re-assert after the later .card-grid override: the dark section is a 2×2,
+   not a 3+1 orphan row. */
+.card-grid--2 {
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+}
+
+@media (max-width: 520px) {
+  .card-grid--2 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Sentence-case eyebrow (keeps "iOS" as written, no forced caps) */
+.eyebrow--plain {
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-weight: 560;
+  font-size: 0.8125rem;
+  color: var(--ink-muted);
+}
+
+/* Real app icons everywhere. display:block is required: .app-icon is
+   display:grid for the SVG placeholder, and grid on an img hides the bitmap. */
+img.app-icon {
+  display: block;
+  width: 56px;
+  height: 56px;
+  border-radius: 13px;
+  object-fit: cover;
+  padding: 0;
+  flex-shrink: 0;
+  border: 1px solid rgba(20, 20, 22, 0.08);
+  box-shadow: 0 1px 2px rgba(20, 20, 22, 0.06), 0 3px 8px rgba(20, 20, 22, 0.06);
+  background: transparent;
+}
+
+img.app-icon.app-icon--lg {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+}
+
+.icon-strip a,
+.app-card__icon {
+  border: 1px solid rgba(20, 20, 22, 0.08);
+}
