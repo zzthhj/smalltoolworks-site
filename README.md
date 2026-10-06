@@ -1,7 +1,9 @@
 # smalltoolworks-site
 
 Static website for **SmallToolWorks**. Pure HTML + CSS + a small amount of
-vanilla JavaScript. No build step, no npm, no framework, no backend.
+vanilla JavaScript. No build step and no npm. `/go/<app>` is a Cloudflare
+Pages Function: it sends each visitor to the App Store product page for their
+own country, so the link is not hard-coded to one storefront.
 
 ## Deploying to Cloudflare Pages
 
