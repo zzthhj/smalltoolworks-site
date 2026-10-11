@@ -83,21 +83,26 @@ These are static and local browser checks, not a deployed Cloudflare audit or
 independent native-speaker review. App Store storefront routing remains
 controlled by Apple.
 
-## Before you publish — three things to fix
+## Product content — updated 11 October 2026
 
-These are marked with `TODO` / `PLACEHOLDER` comments in the HTML. They are
-deliberate; the site is complete and usable, but these items should be settled
-before launch.
+OmniPDF is positioned as batch PDF processing and reusable multi-step workflows,
+with a complete toolkit and optional inspection. Processing and previews are
+available in the app; exporting or sharing processed results requires in-app
+purchase. Plans in current code include export credits, monthly, yearly and
+lifetime access. Do not advertise an all-free or ad-supported model.
 
-1. **OmniPDF release model.** Product pages follow the requested free-tools /
-   export-ad positioning. The local app and current GitHub policy instead have
-   in-app purchases and no advertising SDK. The OmniPDF policy here describes
-   that verified current implementation. Align the product pages and shipped
-   release before publishing; do not invent an advertising provider.
+Sources: OmniPDF README, HomeView/HomeIntent, SubscriptionStore and the
+10 October 2026 App Store metadata under AppStoreMetadata. Prices are not
+hard-coded on the website. All five language versions, related cards, support,
+About and privacy copy follow this model.
 
-Support and privacy contact is `rtx3070757@gmail.com`, verified against app
-configuration and all four published GitHub policies on 6 October 2026.
-See `PRIVACY-REVIEW.md` for source references and remaining policy differences.
+Country-aware `/go/<app>` Cloudflare Pages Functions are intentional and
+approved. The site has no database or user accounts. Availability still depends
+on each app and the visitor's App Store account; do not promise worldwide access.
+Website privacy copy describes the country-based redirect.
+
+Support and privacy share `rtx3070757@gmail.com`. Real product screenshots will
+be added when supplied; no invented screenshots or empty placeholders are used.
 
 ## Consistency check
 
@@ -114,8 +119,8 @@ Specific claims made across the site, to keep aligned:
   uploaded; on-device processing.
 - **NativeID** — prepares photos to size and layout requirements only; does not
   create, issue, reproduce or modify identity documents.
-- **OmniPDF** — all tools free; a short ad may be shown when exporting; no
-  subscription; local processing where possible.
+- **OmniPDF** — batch processing and reusable workflows; local document
+  processing; exports/sharing unlocked by in-app purchase; no in-app ads.
 
 ## Adding a page
 

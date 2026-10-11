@@ -45,11 +45,10 @@ section now distinguishes browser requests handled by Cloudflare from app analyt
 
 ## Remaining release differences
 
-1. OmniPDF's requested website positioning says free tools / export ads. Current
-   local code has paywall/purchase events and no advertising SDK; its live policy
-   says no advertisements and describes optional purchases. The website policy
-   follows the current implementation, so marketing and shipped release must be
-   aligned before publishing. An ad-supported release needs a real provider disclosure.
+1. Resolved on 11 October 2026: the owner confirmed OmniPDF retains its purchase
+   model. Product pages now lead with batch processing and reusable workflows,
+   and disclose paid export/sharing. The former free-tools/export-ad positioning
+   and future advertising notices were removed from all five languages.
 2. SeeClear's live policy mentions no individual calibration answers but does not
    explicitly disclose the calibration-result and applied-mode categories in current
    code. Its offline/only-network-request wording also omits Apple attribution and
@@ -62,3 +61,9 @@ This is a static source review, not a network capture of the App Store binaries.
 App Store Connect privacy answers were not inspected. Browser layout should be
 rechecked after these text changes. README's earlier visual-testing claims were
 not independently rerun in this review.
+
+## Website routing — 11 October 2026
+
+The owner approved Cloudflare Pages Functions for region-aware App Store links.
+The function reads Cloudflare country information and returns a redirect; it has
+no database or user accounts. Website privacy descriptions now disclose this.
