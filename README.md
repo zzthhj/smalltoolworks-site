@@ -179,3 +179,8 @@ US and China mainland links are labelled on localized product pages.
 When adding an app, add its product page to every supported language, update
 the cards, support and privacy links, and add reciprocal language links and
 sitemap entries. Never advertise a fixed total number of apps.
+
+Privacy-source imports must match the complete language heading exactly. Do not
+select Simplified Chinese with a substring such as `中文`, because that also
+matches `繁體中文`. Check reader-facing text and metadata for script mixing,
+while preserving the native labels in the language selector.
