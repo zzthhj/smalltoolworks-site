@@ -169,9 +169,11 @@ same-page language links, canonical URLs and reciprocal hreflang metadata.
 Sitemap includes every localized page and its language alternatives. No
 translation script, external service or build step is required in production.
 
-Localized privacy detail pages are explicitly labelled summaries and link to
-the existing full published GitHub policies. Original English full policies
-remain in place. Storefront choices are explicit and independent of language;
+All eight app policies are hosted in full under `/privacy/<app>/` and the
+localized privacy routes. Existing published translations are preserved, with
+current storage, analytics and purchase clarifications for the first four apps.
+NativeID and RentLog have no published Japanese policy; those routes explicitly
+show the complete English text. Original GitHub URLs remain reference links. Storefront choices are explicit and independent of language;
 US and China mainland links are labelled on localized product pages.
 
 When adding an app, add its product page to every supported language, update

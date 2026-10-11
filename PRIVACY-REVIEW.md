@@ -67,3 +67,13 @@ not independently rerun in this review.
 The owner approved Cloudflare Pages Functions for region-aware App Store links.
 The function reads Cloudflare country information and returns a redirect; it has
 no database or user accounts. Website privacy descriptions now disclose this.
+
+## Full policy migration — 11 October 2026
+
+Fetched all eight original GitHub Pages policies. All five website languages
+now host each app's complete policy. The first four policies retain current
+website disclosures and reconcile conflicting local-processing/no-data claims
+in the source text. No original GitHub repository or App Store Connect setting
+was changed. NativeID and RentLog use a labelled English fallback in Japanese.
+Product, support and policy-index links now point to the website policies.
+Migration dates are labelled separately from original policy dates.
