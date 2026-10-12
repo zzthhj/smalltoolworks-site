@@ -184,3 +184,13 @@ Privacy-source imports must match the complete language heading exactly. Do not
 select Simplified Chinese with a substring such as `中文`, because that also
 matches `繁體中文`. Check reader-facing text and metadata for script mixing,
 while preserving the native labels in the language selector.
+
+## PressPDFly — 12 October 2026
+
+Product and full privacy pages exist in all five website languages. The product
+uses current single-export and lifetime purchases, not the alternate free/ad
+metadata. Source: PressPDFly Store.swift, Analytics and current metadata folder.
+Public Apple lookup for App ID 6819921721 returned no listing; the local ASC
+plan records PREPARE_FOR_SUBMISSION. Website cards therefore say coming soon
+and link to product details, with no download button until availability is
+confirmed. Add the App Store route and button after release.
