@@ -194,3 +194,9 @@ Public Apple lookup for App ID 6819921721 returned no listing; the local ASC
 plan records PREPARE_FOR_SUBMISSION. Website cards therefore say coming soon
 and link to product details, with no download button until availability is
 confirmed. Add the App Store route and button after release.
+
+## JoinSplit PDF — 14 October 2026
+
+Added product, support and privacy entries in all five website languages. Uses the current merge/split/organize features and successful-export credit model, with on-device files and optional saved task copies. The app is marked Coming soon until released; no public download button is shown yet. Country-aware routing /go/joinsplitpdf is configured with verified ASC app ID 6821798461 for launch.
+
+Approved iPhone and actual iPad screenshot artwork is provided as local optimized WebP assets. Privacy copy reflects this app, without PressPDFly analytics or attribution claims. The older .workbuddy rich-page generator predates these additions; do not run it across the current site without migrating current content.
