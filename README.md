@@ -200,3 +200,7 @@ confirmed. Add the App Store route and button after release.
 Added product, support and privacy entries in all five website languages. Uses the current merge/split/organize features and successful-export credit model, with on-device files and optional saved task copies. The app is marked Coming soon until released; no public download button is shown yet. Country-aware routing /go/joinsplitpdf is configured with verified ASC app ID 6821798461 for launch.
 
 Approved iPhone and actual iPad screenshot artwork is provided as local optimized WebP assets. Privacy copy reflects JoinSplit PDF’s EU Aptabase usage analytics, without advertising attribution. The older .workbuddy rich-page generator predates these additions; do not run it across the current site without migrating current content.
+
+## JoinSplit PDF — 16 October 2026
+
+Updated all five languages from Coming soon to Available now on home, product list and product detail pages. Product pages now offer an App Store download button through the existing country-aware /go/joinsplitpdf route (App ID 6821798461).
