@@ -205,17 +205,17 @@ Approved iPhone and actual iPad screenshot artwork is provided as local optimize
 
 Updated all five languages from Coming soon to Available now on home, product list and product detail pages. Product pages now offer an App Store download button through the existing country-aware /go/joinsplitpdf route (App ID 6821798461).
 
-## SeeClear — version 1.49 preparation, 17 October 2026
+## SeeClear — version 1.50 preparation, 17 October 2026
 
 Updated the five localized product, support and privacy pages for the non-renewing
 1-Day Pass. It grants all Pro features for 24 hours from the verified purchase time;
 restore does not restart the period. Pricing is taken from the app, not hard-coded.
-Version-scoped wording does not claim that 1.49 has already shipped.
+Version-scoped wording does not claim that 1.50 has already shipped.
 
 Replaced the migrated policy plus supplements with one current policy per language.
 Calibration types/results/settings are excluded from analytics. Disclosed SDK metadata,
 seconds, technical friction events, Apple attribution, retention and local storage.
-Version 1.49 contains no AdMob SDK or third-party ads; advertising is deferred to 1.50.
+Version 1.50 contains no AdMob SDK or third-party ads; advertising is deferred to a later release, with its version to be decided.
 Source of truth: Eyen/SeeClear-Privacy-Policy.md and Eyen/docs/analytics-policy.md.
 The existing app-ads.txt and all other app pages were preserved. These are local
 preparation changes, not proof of deployment or App Store release.
