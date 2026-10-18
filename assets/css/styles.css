@@ -1878,3 +1878,6 @@ img.app-icon.app-icon--lg {
 
 /* JoinSplit PDF product screenshots */
 .joinsplit-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:28px}.joinsplit-gallery figure{margin:0}.joinsplit-gallery img{display:block;width:100%;height:auto;border-radius:16px;box-shadow:0 8px 24px rgba(20,55,52,.10)}.joinsplit-gallery figcaption{font-size:.9rem;color:var(--color-text-muted,#66706c);margin-top:12px;line-height:1.5}.joinsplit-ipad{margin-top:32px}.joinsplit-ipad summary{cursor:pointer;font-weight:600;padding:14px 0}.joinsplit-ipad[open] summary{margin-bottom:8px}@media(max-width:640px){.joinsplit-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
+
+/* PixDim product screenshots */
+.pixdim-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:28px}.pixdim-gallery figure{margin:0}.pixdim-gallery img{display:block;width:100%;height:auto;border-radius:16px;box-shadow:0 8px 24px rgba(20,55,52,.10)}.pixdim-ipad{margin-top:32px}.pixdim-ipad summary{cursor:pointer;font-weight:600;padding:14px 0}@media(max-width:640px){.pixdim-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}

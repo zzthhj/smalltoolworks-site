@@ -219,3 +219,11 @@ Version 1.49 contains no AdMob SDK or third-party ads; advertising is deferred t
 Source of truth: Eyen/SeeClear-Privacy-Policy.md and Eyen/docs/analytics-policy.md.
 The existing app-ads.txt and all other app pages were preserved. These are local
 preparation changes, not proof of deployment or App Store release.
+
+## PixDim — 18 October 2026
+
+Added product and full privacy pages in all five site languages, iPhone/iPad screenshot galleries, home/catalogue cards, support entries and localized footer links. PixDim is marked Coming soon; no public download button is shown. ASC app ID: 6822711253.
+
+Images are processed locally, without advertising or analytics SDKs. Editing and preview are free; export uses a consumable single-result purchase or a non-consumable lifetime purchase. Prices are displayed in the app. Privacy disclosures cover permissions, local purchase records and result fingerprints, retention, Apple payments, exported copies and support email. The existing developer support address is reused: rtx3070757@gmail.com. Terms use Apple’s standard EULA.
+
+Prepared locally only; deployment and live URL availability must be verified separately.
