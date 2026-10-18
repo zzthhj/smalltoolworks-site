@@ -227,3 +227,7 @@ Added product and full privacy pages in all five site languages, iPhone/iPad scr
 Images are processed locally, without advertising or analytics SDKs. Editing and preview are free; export uses a consumable single-result purchase or a non-consumable lifetime purchase. Prices are displayed in the app. Privacy disclosures cover permissions, local purchase records and result fingerprints, retention, Apple payments, exported copies and support email. The existing developer support address is reused: rtx3070757@gmail.com. Terms use Apple’s standard EULA.
 
 Prepared locally only; deployment and live URL availability must be verified separately.
+
+## PixDim analytics — 18 October 2026
+
+PixDim now integrates Aptabase EU for fixed operation and purchase outcome events. Updated all five PixDim privacy policies, product summaries and privacy index entries to disclose the SDK metadata, daily pseudonymous region derivation, retention and absence of a dedicated opt-out switch. No images, names, paths, image settings or transaction IDs are sent. No advertising SDK or attribution is added. Existing compact galleries and unrelated app content are preserved.
