@@ -147,7 +147,7 @@ pass over contrast in both themes.
 Products are grouped by task, without a fixed public app count. RentLog,
 LumaChoice, StillTap and CareerShot have product pages and direct links to their
 published GitHub policies. All listed apps use verified Apple listing IDs.
-The catalogue excludes JobPacket, MerchPic, FileReady and the Beijing residency
+The catalogue excludes JobPacket, FileReady and the Beijing residency
 app as requested. Planned ad-supported photo utility and ID-photo variants are
 not presented as released apps; add their final names, policies and listings
 when ready.
@@ -231,3 +231,11 @@ Prepared locally only; deployment and live URL availability must be verified sep
 ## PixDim analytics — 18 October 2026
 
 PixDim now integrates Aptabase EU for fixed operation and purchase outcome events. Updated all five PixDim privacy policies, product summaries and privacy index entries to disclose the SDK metadata, daily pseudonymous region derivation, retention and absence of a dedicated opt-out switch. No images, names, paths, image settings or transaction IDs are sent. No advertising SDK or attribution is added. Existing compact galleries and unrelated app content are preserved.
+
+## MerchPic — 23 October 2026
+
+Added product, support and privacy entries in all five website languages. MerchPic prepares real product photos on the device for Amazon, Shopify, Etsy, eBay, TikTok Shop, and a general preset, then exports JPEG sets. Photos are not uploaded. The current app has no account, no ads, and no in-app purchase. It is marked Coming soon; no public download button is shown because there is no verified App Store listing yet. Presets are described as preparation checks, not marketplace approval. Support uses rtx3070757@gmail.com. No screenshot gallery is included.
+
+## PixDim — available 23 October 2026
+
+Public Apple lookup for App ID 6822711253 returned the US listing PixDim: Resize & Compress. Updated all five languages from Coming soon to available on the home cards, product list and product pages. Product pages link to the country-aware /go/pixdim route. The China mainland lookup returned no listing, so visitors reported in mainland China are sent to the US listing; installation still depends on the Apple Account region.

@@ -4,6 +4,10 @@
 
 export const APPS = {
   joinsplitpdf: { id: "6821798461" },
+  pixdim: {
+    id: "6822711253",
+    us: "https://apps.apple.com/us/app/pixdim-resize-compress/id6822711253",
+  },
   omnipdf: {
     id: "6779046820",
     cn: "https://apps.apple.com/cn/app/omnipdf-%E6%99%BA%E8%83%BD%E6%89%B9%E9%87%8Fpdf%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/id6779046820",
