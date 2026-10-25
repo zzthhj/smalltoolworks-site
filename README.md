@@ -147,8 +147,9 @@ pass over contrast in both themes.
 Products are grouped by task, without a fixed public app count. RentLog,
 LumaChoice, StillTap and CareerShot have product pages and direct links to their
 published GitHub policies. All listed apps use verified Apple listing IDs.
-The catalogue excludes JobPacket, FileReady and the Beijing residency
-app as requested. Planned ad-supported photo utility and ID-photo variants are
+JobPacket is listed as coming soon: it has a product page and a hosted
+privacy policy here, and no App Store listing yet. The catalogue excludes
+FileReady and the Beijing residency app as requested. Planned ad-supported photo utility and ID-photo variants are
 not presented as released apps; add their final names, policies and listings
 when ready.
 
@@ -239,3 +240,27 @@ Added product, support and privacy entries in all five website languages. MerchP
 ## PixDim — available 23 October 2026
 
 Public Apple lookup for App ID 6822711253 returned the US listing PixDim: Resize & Compress. Updated all five languages from Coming soon to available on the home cards, product list and product pages. Product pages link to the country-aware /go/pixdim route. The China mainland lookup returned no listing, so visitors reported in mainland China are sent to the US listing; installation still depends on the Apple Account region.
+
+## JobPacket — added 25 October 2026
+
+JobPacket is a field-service job record for iPhone and iPad: photos by stage,
+work performed, parts, issues, customer sign-off, then a frozen packet version
+and a client PDF. It is listed as coming soon; there is no App Store listing
+yet, so the page has no store button.
+
+Facts that must stay identical across the app, the App Store listing, the ASC
+privacy answers, `PrivacyInfo.xcprivacy`, the privacy page here and Support:
+
+- Records, photos, audio, signatures and PDFs are stored on the device. No
+  account, no cloud photo storage, no advertising, no tracking.
+- The first two finalized Job Packets are free; Pro is a monthly/yearly
+  subscription or a lifetime purchase handled by the App Store.
+- Limited analytics go to Aptabase in the EU region (the key starts with
+  `A-EU-`): fixed event categories and small count buckets only. No customer
+  names, addresses, photo content, captions, notes, signatures or free text.
+- Speech recognition and the optional writing help run on the device.
+- Location is optional and only reaches the PDF when "Include location in
+  report" is enabled.
+
+Pages: `products/jobpacket/` and `privacy/jobpacket/` exist in English plus the
+four localized trees. Support section anchor: `/support/#jobpacket`.
