@@ -274,3 +274,12 @@ product list and product pages. Product pages link to the country-aware
 /go/presspdfly route. The China mainland lookup returned no listing, so
 visitors reported in mainland China are sent to the US listing; installation
 still depends on the Apple Account region.
+
+## Portuguese (Brazil) — partial, added 26 October 2026
+
+`/pt-br/products/jobpacket/` and `/pt-br/privacy/jobpacket/` are translated so the
+pt-BR App Store listing can point at a Portuguese privacy policy. The rest of the
+site has no Portuguese pages yet, so the pt-BR pages link back to English
+products, support and about pages, and other languages' pages do not show a
+Portuguese link. Extend app by app when translations are ready: add the page, the
+`hreflang="pt-BR"` alternate and the `Português` language-bar entry.
