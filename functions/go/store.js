@@ -3,6 +3,10 @@
 // local store home, which is the Today tab.
 
 export const APPS = {
+  presspdfly: {
+    id: "6819921721",
+    us: "https://apps.apple.com/us/app/presspdfly-pdf-compressor/id6819921721",
+  },
   joinsplitpdf: { id: "6821798461" },
   pixdim: {
     id: "6822711253",

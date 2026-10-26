@@ -264,3 +264,13 @@ privacy answers, `PrivacyInfo.xcprivacy`, the privacy page here and Support:
 
 Pages: `products/jobpacket/` and `privacy/jobpacket/` exist in English plus the
 four localized trees. Support section anchor: `/support/#jobpacket`.
+
+## PressPDFly — available 26 October 2026
+
+Public Apple lookup for App ID 6819921721 returned the US listing
+PressPDFly: PDF Compressor, version 1.01, released 25 October 2026.
+Updated all five languages from Coming soon to available on the home cards,
+product list and product pages. Product pages link to the country-aware
+/go/presspdfly route. The China mainland lookup returned no listing, so
+visitors reported in mainland China are sent to the US listing; installation
+still depends on the Apple Account region.
