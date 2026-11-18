@@ -8,6 +8,7 @@ export const APPS = {
     us: "https://apps.apple.com/us/app/presspdfly-pdf-compressor/id6819921721",
   },
   joinsplitpdf: { id: "6821798461" },
+  scanvela: { id: "6835025776" },
   pixdim: {
     id: "6822711253",
     us: "https://apps.apple.com/us/app/pixdim-resize-compress/id6822711253",

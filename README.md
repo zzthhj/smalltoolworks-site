@@ -283,3 +283,11 @@ site has no Portuguese pages yet, so the pt-BR pages link back to English
 products, support and about pages, and other languages' pages do not show a
 Portuguese link. Extend app by app when translations are ready: add the page, the
 `hreflang="pt-BR"` alternate and the `Português` language-bar entry.
+
+## ScanVela — added 18 November 2026
+
+ScanVela turns photos, scans and long screenshots into tidy PDFs: camera scan with automatic edge detection, photo/PDF import, page organizing with 1/2/4-up layouts, on-device book page flattening (CoreML), export as PDF / per-page images / one long stitched image, and target-size compression. Free tier: scanning, arranging and 200 DPI export with no watermark and no page limits — PDF export is never charged per page. Pro adds 300 DPI print-grade export and password-protected PDFs, unlocked with a single Pro export (consumable credit) or a one-time lifetime purchase; no subscription. Prices are shown in the app.
+
+Privacy facts: everything happens on device; no account, no advertising, no analytics, no tracking; PrivacyInfo.xcprivacy declares no collected data types. Purchases run through Apple (StoreKit 2); unused export credits are stored in the device Keychain and survive reinstall. Support: rtx3070757@gmail.com.
+
+Marked Coming soon: ASC app ID 6835025776 exists with state MISSING_METADATA and no public App Store listing, so pages show no download button. The country-aware /go/scanvela route is configured with that ASC app ID for launch. Product and privacy pages exist in all five site languages plus pt-BR product/privacy pages. Home cards, catalogue cards, support entries, privacy index, footers on all pages, sitemap and reciprocal hreflang were updated. While adding the entries, the malformed jobpacket hreflang URLs in the sitemap (missing slash after the domain) were repaired. Facts source: ScanVela source code (PurchaseStore.swift, CreditWallet.swift, PrivacyInfo.xcprivacy, project.pbxproj) and ASC records.
