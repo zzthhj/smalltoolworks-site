@@ -7,6 +7,11 @@ export const APPS = {
     id: "6819921721",
     us: "https://apps.apple.com/us/app/presspdfly-pdf-compressor/id6819921721",
   },
+  jobpacket: {
+    id: "6811745343",
+    us: "https://apps.apple.com/us/app/jobpacket-quotes-invoices/id6811745343",
+    usOnly: true,
+  },
   joinsplitpdf: { id: "6821798461" },
   scanvela: { id: "6835025776" },
   pixdim: {
@@ -58,6 +63,9 @@ export function storeUrl(app, country) {
   const raw = String(country || "us").toLowerCase();
   const cc = raw === "uk" ? "gb" : raw;
   const code = STOREFRONTS.has(cc) ? cc : "us";
+  // Apps whose listing exists in one storefront only. A per-country path would
+  // land on a missing product page, so every visitor gets the single listing.
+  if (app.usOnly && app.us) return app.us;
   if (code === "cn" && app.cn) return app.cn;
   if (code === "us" && app.us) return app.us;
   if (code === "cn" && !app.cn && app.us) return app.us;

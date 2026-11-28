@@ -147,8 +147,8 @@ pass over contrast in both themes.
 Products are grouped by task, without a fixed public app count. RentLog,
 LumaChoice, StillTap and CareerShot have product pages and direct links to their
 published GitHub policies. All listed apps use verified Apple listing IDs.
-JobPacket is listed as coming soon: it has a product page and a hosted
-privacy policy here, and no App Store listing yet. The catalogue excludes
+ColorAlmanac has a product page and a hosted privacy policy and is marked
+coming soon, with no App Store listing yet. The catalogue excludes
 FileReady and the Beijing residency app as requested. Planned ad-supported photo utility and ID-photo variants are
 not presented as released apps; add their final names, policies and listings
 when ready.
@@ -291,3 +291,72 @@ ScanVela turns photos, scans and long screenshots into tidy PDFs: camera scan wi
 Privacy facts: everything happens on device; no account, no advertising, no analytics, no tracking; PrivacyInfo.xcprivacy declares no collected data types. Purchases run through Apple (StoreKit 2); unused export credits are stored in the device Keychain and survive reinstall. Support: rtx3070757@gmail.com.
 
 Marked Coming soon: ASC app ID 6835025776 exists with state MISSING_METADATA and no public App Store listing, so pages show no download button. The country-aware /go/scanvela route is configured with that ASC app ID for launch. Product and privacy pages exist in all five site languages plus pt-BR product/privacy pages. Home cards, catalogue cards, support entries, privacy index, footers on all pages, sitemap and reciprocal hreflang were updated. While adding the entries, the malformed jobpacket hreflang URLs in the sitemap (missing slash after the domain) were repaired. Facts source: ScanVela source code (PurchaseStore.swift, CreditWallet.swift, PrivacyInfo.xcprivacy, project.pbxproj) and ASC records.
+
+## JobPacket — available 28 November 2026
+
+Public Apple lookup for App ID 6811745343 returned the US listing
+**JobPacket: Quotes & Invoices**, version 1.0, released 25 November 2026, free
+with in-app purchase, category Utilities. The store name now covers quotes and
+invoices, so all six site languages were rewritten rather than just flipped from
+Coming soon: the product pages describe quoting on site, documenting the work,
+invoices and part payments with a PDF receipt for each, the photo report with
+frozen versions, search of earlier visits, and backup / job-file handover.
+
+Free tier and Pro wording follows the listing, not the earlier placeholder:
+recording work, completing jobs, previewing documents, recording payments and
+sharing individual payment receipts are free; Pro unlocks exporting, sharing and
+printing quote, work report and invoice PDFs, and previously exported PDFs remain
+available after Pro expires. Weekly, monthly and yearly subscriptions plus a
+one-time lifetime purchase exist; monthly and yearly offer a 7-day trial to
+eligible customers. The old "first two finalized Job Packets are free" card copy
+was removed everywhere because it no longer matches the app.
+
+Store routing: only the US territory is available in ASC
+(`appAvailabilityV2` reports `USA` available and `CANNOT_SELL` elsewhere, and the
+iTunes lookup returns a result only for `country=us`). `/go/jobpacket` therefore
+uses `usOnly: true` in `functions/go/store.js`, which sends every visitor to the
+single US listing instead of a per-country path that would 404. Each product page
+carries a one-line note that the launch listing is on the United States store.
+
+Privacy pages needed no content change: `privacy/jobpacket/` was already updated
+on 11 November 2026 for quotes, invoices, payment and refund records and the
+diagnostics categories. Only the privacy-index summaries were widened to mention
+quotes, invoices and receipts.
+
+While updating, the sitemap's jobpacket entries were repaired: 40 `hreflang`
+URLs were missing the slash after the locale (`/zh-cnproducts/…`) and 50 more in
+the ScanVela block repeated the locale (`/zh-cn/zh-cn/…`). Lastmod for the twelve
+JobPacket URLs is 2026-11-28.
+
+## ColorAlmanac — added 28 November 2026
+
+幸运色历 / ColorAlmanac is a new SmallToolWorks app for iPhone and iPad, in
+development and not submitted. It is marked Coming soon with no download button;
+product and privacy pages exist in all five site languages
+(`products/coloralmanac/`, `privacy/coloralmanac/`), with home and catalogue
+cards, a support entry (`/support/#coloralmanac`), a privacy-index entry, footer
+links on every page, reciprocal hreflang and sitemap entries. There is no
+`/go/coloralmanac` route and no ASC app ID yet — add both at launch.
+
+Product facts come from `DESIGN.md` and the app source: one personal color method
+active at a time (Five Elements from the birth date by default, sun sign,
+birthstone, Thai weekday colors, or the double-hour color), a future-moment
+lookup (three hours ahead, 08:00 tomorrow, or any date and clock time), a 2–7 day
+comparison and a month view, and a camera/photo finder that reports one tier of
+the user's own method. Editing the profile is always free; the continuous
+almanac, month view and finder need a valid trial or Pro. `PremiumAccess.swift`
+records a three-day trial from first launch in the Keychain, so reinstalling does
+not restart it; Pro is monthly, yearly or lifetime via StoreKit 2.
+
+Privacy facts, from `AlmanacAnalytics.swift`, `AlmanacStore.swift` and
+`PurchaseStore.swift`: preferences (birth date, method, language) live in
+UserDefaults and never leave the device; camera only while the finder is open;
+photos arrive through the system picker; reminders are local notifications; no
+location, microphone or contacts; Aptabase EU key `A-EU-…` receives thirteen
+fixed events with enumerated properties and no birth date, colors, photos or
+free text; analytics start with the app and there is no in-app analytics switch,
+which the policy states plainly. The policy is dated 2026-11-28 and says it
+describes the app as prepared for release.
+
+Icon: `assets/images/coloralmanac.png` is the 1024 px AppIcon resized to 256 px,
+matching the other product icons.
