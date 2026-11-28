@@ -359,4 +359,16 @@ which the policy states plainly. The policy is dated 2026-11-28 and says it
 describes the app as prepared for release.
 
 Icon: `assets/images/coloralmanac.png` is the 1024 px AppIcon resized to 256 px,
-matching the other product icons.
+matching the other product icons. The hero icon strip on the home page lists
+every product, so ColorAlmanac was added there too, after StillTap in the
+wellbeing group, in all five languages.
+
+Product copy, 28 November 2026 (second pass): the first draft read like a
+feature inventory. It was replaced with the card-first description supplied by
+the owner — one card a day with its code and reasoning, five methods, the
+calendar for looking ahead, the camera for reading colors nearby, a reminder at
+a chosen time, then on-device work with the 72-hour trial and the three purchase
+options. `72 hours` is stated instead of `3 days` because that is the wording the
+owner uses; the code still records 72 hours from first launch. The dry method
+table and the separate visual-style section were dropped.
+
